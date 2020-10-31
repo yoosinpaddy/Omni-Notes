@@ -17,11 +17,12 @@
   -->
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/toolbar_widget"
-    android:layout_width="match_parent"
-    android:layout_height="@dimen/widget_height"
-    android:background="@color/colorPrimary"
-    android:elevation="4dp">
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:id="@+id/toolbar_widget"
+  android:layout_width="match_parent"
+  android:layout_height="@dimen/widget_height"
+  android:background="@color/colorPrimary"
+  android:elevation="4dp">
 
     <ImageView
         android:id="@+id/list"
@@ -51,5 +52,5 @@
         android:background="@drawable/icon_selector"
         android:gravity="center"
         android:padding="10dp"
-        android:src="@drawable/ic_camera_alt_white_48dp" />
+        app:srcCompat="@drawable/camera_white" />
 </LinearLayout>
